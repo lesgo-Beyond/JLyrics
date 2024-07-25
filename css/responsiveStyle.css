@@ -1,0 +1,62 @@
+
+
+
+
+/* navbar styles----------------------- */
+
+@media (min-width: 0px) and (max-width: 900px){
+    .navoption{
+        display: none;
+    }
+    .menubox{
+        display: block;
+    }
+    #checkbox:checked ~.resnavoption{
+        display: block;
+        right: 13px;
+    }
+}
+@media (max-width: 610px){
+    /* .Feedback{
+        width: 400px;
+    } */
+}
+@media (max-width: 710px){
+    .filter select, .filter input{
+        width: 150px;
+        height: 30px;
+    }
+    .JArtists{
+        width: 400px;
+    }
+    .JArtistsPhotos img{
+        width: 150px;
+        height: 150px;
+    }
+    .JArtistsDetails{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 390px){
+    .filter select, .filter input{
+        width: 140px;
+        height: 30px;
+    }
+    .JArtists{
+        width: 330px;
+    }
+    .JArtistsPhotos img{
+        width: 150px;
+        height: 150px;
+    }
+    .JArtistsDetails{
+        font-size: 11px;
+    }
+    .JArtistsContainerEach{
+        display:flex;
+        background-color:rgba(54, 47, 95, 0.452);
+        border: 1px solid slateblue;
+        height: 180px;
+    }
+}

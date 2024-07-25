@@ -1,0 +1,332 @@
+   * {
+       transition: all 0.5s;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       /* border: 1px solid red; */
+   }
+
+   body {
+       margin: 0;
+       background-image: url(img/sigurebg.png);
+       height: fit-content;
+       width: 100%;
+       background-attachment: fixed;
+       /* background-repeat: no-repeat; */
+       color: white;
+       scroll-behavior: smooth;
+   }
+   .Evebg{
+    background-image: url(img/evebg.png)!important;
+   }
+   .aisaibg{
+    background-image: url(img/aisaibg.png);
+   }
+
+   .blockbox {
+       height: 100px;
+   }
+
+   /* navigation bar styles starts here----------------------- */
+   .navbar {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: rgb(48 64 59 / 84%);
+       position: fixed;
+       width: 100%;
+       padding: 10px;
+   }
+
+   .navbar h1 {
+       margin: 0;
+   }
+
+   .navoption a, .list a {
+       color: white;
+       text-decoration: none;
+       padding: 5px 9px;
+       border-radius: 10px;
+   }
+   .list a{
+    display: inline-block;
+    /* margin: 5px; */
+   }
+
+   .navoption a:hover, .list a:hover {
+    background-color: black;
+       color: rgb(255, 255, 255);
+       transition: 0.6s;
+   }
+
+   #checkbox {
+       display: none;
+   }
+
+   .menubox {
+       display: none;
+   }
+
+   .resnavoption {
+       position: fixed;
+       top: 50px;
+       background-color: white;
+       padding: 13px;
+       border-radius: 10px;
+       right: -1000px;
+       text-align: right;
+   }
+
+   .resnavoption a {
+       color: #1c2429;
+       text-decoration: none;
+       display: block;
+       padding: 5px 13px;
+       border-radius: 10px;
+   }
+
+   .resnavoption a:hover {
+       background-color: #1c2429;
+       color: white;
+   }
+
+   /* style for navbar ends here--------------------------------- */
+
+   /* style for landing page welcome section starts here ------------------- */
+   .centering {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .welcome {
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .welcome button {
+       color: black;
+       background-color: white;
+       border: none;
+       width: 100px;
+       height: 40px;
+       font-size: 18px;
+       cursor: pointer;
+       border-radius: 10px;
+       margin-right: 10px;
+   }
+
+   .welcome button:hover {
+       background-color: black;
+       color: white;
+   }
+
+   .recently-added a,
+   .most-popular a {
+       color: white;
+   }
+
+   .copyright {
+       text-align: center;
+   }
+
+   .copyright a {
+       text-decoration: none;
+       font-weight: 1000;
+       cursor: text;
+       font-size: 75%;
+       letter-spacing: .2em;
+       color: #b9b6b6;
+       margin: 22px;
+       display: inline-block;
+       color: white;
+       text-shadow: 1px 1px 5px rgb(0, 0, 0);
+   }
+
+   .contact a {
+       color: white;
+       text-decoration: underline;
+       margin: 7px;
+   }
+
+   .contact a:hover {
+       color: rgb(179, 215, 247);
+   }
+
+
+
+   /* songs section starts here ------------------------- */
+   .centeringForSongs {
+       padding: 20px;
+   }
+
+   .songbox {
+       max-width: 700px;
+       display: flex;
+       flex-direction: column;
+       padding: 20px;
+       background-color: #10214d8a;
+   }
+
+   /* songs section ends here ----------------------------- */
+
+   /* feedback section starts here ---------------------- */
+
+   .Feedback {
+        padding: 0px 20px;
+       width: 600px;
+       text-align: left;
+       margin: 0px 0px 20px 0px;
+   }
+
+   .feedbackInput,
+   .feedbackInputbig {
+       font-size: 18px;
+       color: white;
+       width: 100%;
+       padding: 10px 0px;
+       margin-bottom: 10px;
+       background: none;
+       border: none;
+       border-bottom: 3px solid #00578a75;
+   }
+
+   .feedbackInput:hover,
+   .feedbackInputbig:hover {
+       font-size: 21px;
+   }
+
+   .feedbackInput {
+       height: 30px;
+   }
+
+   .feedbackInputbig {
+       height: 130px;
+   }
+
+   .SendBtn {
+       width: 130px;
+       height: 40px;
+       font-size: 20px;
+       border-radius: 10px;
+       border: none;
+       cursor: pointer;
+   }
+
+   .SendBtn:hover {
+       color: white;
+       background-color: black;
+   }
+
+   .sentBox {
+       width: 600px;
+       text-align: left;
+       margin: 0px 0px 20px 0px;
+   }
+
+
+/* JArtists section starts here ------------------------ */
+#gotoTop {
+    position: fixed;
+    bottom: 21px;
+    right: 23px;
+}
+
+#gotoTop button {
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+#gotoTop button:hover {
+    background-color: black;
+    color: white;
+}
+
+.JArtists{
+    width: 700px;
+    text-align: left;
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0px 20px 0px;
+}
+
+.filter select, .filter input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+
+.JArtistsContainerEach{
+    display:flex;
+    background-color:rgba(54, 47, 95, 0.452);
+    border: 1px solid slateblue;
+    height: 150px;
+    cursor: pointer;
+    margin: 0px 0px 7px 0px;
+}
+
+.JArtistsContainerEach:hover{
+    cursor: pointer;
+    background-color: rgba(105, 90, 205, 0.486);
+}
+
+
+.JArtistsPhotos img{
+    width: 150px;
+    height: 150px;
+}
+
+.JArtistsDetails{
+    font-size: 13px;
+    display: inline-block;
+    width: 550px;
+    height: 150px;
+    padding: 0px 15px;
+}
+
+
+
+/* Artist profile section starts here ------------------- */
+
+.ArtistProfile{
+    max-width: 700px;
+    padding: 0px 10px;
+}
+.ArtistTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.ArtistTitle img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.ArtistTitle h1{
+    padding: 0px 10px;
+}
+
+.songsList a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.songsList a:hover{
+    background-color: black;
+}
+

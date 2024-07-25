@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsiveStyle.css">
+    <title>Feedback/SMS/Request: JLyrics</title>
+</head>
+
+<body>
+    <!-- navbar starts here--------------- -->
+    <div class="navbar">
+        <input type="checkbox" id="checkbox">
+        <a href="../index.html" style="text-decoration: none; color: white;"><h1><em>JLyrics</em></h1></a>
+
+        <div class="menubox">
+            <label for="checkbox"><b><em>Menu</em></b></label>
+        </div>
+        <div class="resnavoption">
+            <a href="../JArtists/JArtistsList.html">JArtists</a>
+            <a href="../JSongs/JSongsList.html">JSongs</a>
+            <a href="FeedbackSMSrequest.html">Feedback/Send SMS/Request</a>
+            <label for="checkbox"><b><em style="color: black;">Close[X]</em></b></label>
+        </div>
+        <div class="navoption">
+            <a href="../JArtists/JArtistsList.html">JArtists</a>
+            <a href="../JSongs/JSongsList.html">JSongs</a>
+            <a href="FeedbackSMSrequest.html">Feedback/Send SMS/Request</a>
+        </div>
+    </div>
+    <!-- navbar ends here-------------------- -->
+    <div class="blockbox">
+
+    </div>
+    <div class="centering">
+        <div class="Feedback">
+            <div>
+                <h2>
+                    Feedback/Send SMS/Request
+                </h2>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit mollitia sapiente quidem aperiam
+                    voluptatibus porro iste at nisi hic, fugiat voluptates totam placeat, corrupti tempore maxime
+                    blanditiis possimus libero, ex repudiandae perferendis dolorem. Impedit?
+                </p>
+            </div>
+            <div>
+
+                <form action="submit.php" method="post">
+                    <input class="feedbackInput" type="text" id="name" name="name" placeholder="Name" required><br>
+
+
+                    <input class="feedbackInput" type="email" id="email" name="email" placeholder="Email" required><br>
+
+
+                    <input class="feedbackInput" type="text" id="subject" name="subject" placeholder="Subject"
+                        required><br>
+
+
+                    <textarea class="feedbackInputbig" id="message" name="message" placeholder="Your SMS"
+                        required></textarea><br>
+                        <!-- onclick="showResult()" -->
+                    <button type="submit" class="SendBtn">Send</button>
+                    <b><em id="showResult"></em></b>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <a href="">2024 &copy; JLyrics.</a>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function showResult() {
+        var showResult = document.getElementById("showResult");
+        showResult.innerHTML = "<br><span style='color: green;'>Successfully Sent!</span>";
+    }
+</script>
